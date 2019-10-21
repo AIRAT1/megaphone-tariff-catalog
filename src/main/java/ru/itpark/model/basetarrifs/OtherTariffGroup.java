@@ -1,4 +1,4 @@
-package ru.itpark.model;
+package ru.itpark.model.basetarrifs;
 
 public abstract class OtherTariffGroup extends BaseTariffGroup {
     private boolean perMinuteBilling;
