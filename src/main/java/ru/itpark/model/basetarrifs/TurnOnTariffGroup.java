@@ -1,4 +1,4 @@
-package ru.itpark.model;
+package ru.itpark.model.basetarrifs;
 
 public abstract class TurnOnTariffGroup extends BaseTariffGroup {
     private int freeMinutesCount;
