@@ -1,10 +1,10 @@
 package ru.itpark.model.basetariff;
 
-public abstract class ModemUserTariffGroup extends BaseTariffGroup {
+public class ModemUserTariff extends BaseTariffGroup {
     private boolean unlimitedInternetAccessForSixMonths;
     private boolean unlimitedInternetAccessForTwelveMonths;
 
-    public ModemUserTariffGroup(int id, String name, int price, boolean unlimitedInternetAccessForSixMonths, boolean unlimitedInternetAccessForTwelveMonths) {
+    public ModemUserTariff(int id, String name, int price, boolean unlimitedInternetAccessForSixMonths, boolean unlimitedInternetAccessForTwelveMonths) {
         super(id, name, price);
         this.unlimitedInternetAccessForSixMonths = unlimitedInternetAccessForSixMonths;
         this.unlimitedInternetAccessForTwelveMonths = unlimitedInternetAccessForTwelveMonths;

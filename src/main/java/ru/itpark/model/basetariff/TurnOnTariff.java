@@ -1,6 +1,6 @@
 package ru.itpark.model.basetariff;
 
-public abstract class TurnOnTariffGroup extends BaseTariffGroup {
+public class TurnOnTariff extends BaseTariffGroup {
     private int freeMinutesCount;
     private boolean unlimitedInternetAccess;
     private boolean unlimitedSMSAccess;
@@ -8,7 +8,7 @@ public abstract class TurnOnTariffGroup extends BaseTariffGroup {
     private int freeSMSCount;
     private boolean thirtyDaysFee;
 
-    public TurnOnTariffGroup(int id, String name, int price, int freeMinutesCount, boolean unlimitedInternetAccess, boolean unlimitedSMSAccess, int freeGigabytesCount, int freeSMSCount, boolean thirtyDaysFee) {
+    public TurnOnTariff(int id, String name, int price, int freeMinutesCount, boolean unlimitedInternetAccess, boolean unlimitedSMSAccess, int freeGigabytesCount, int freeSMSCount, boolean thirtyDaysFee) {
         super(id, name, price);
         this.freeMinutesCount = freeMinutesCount;
         this.unlimitedInternetAccess = unlimitedInternetAccess;
