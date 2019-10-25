@@ -1,6 +1,6 @@
 package ru.itpark;
 
-import ru.itpark.model.concretetarrifs.*;
+import ru.itpark.model.concretetariff.*;
 
 import java.util.Arrays;
 

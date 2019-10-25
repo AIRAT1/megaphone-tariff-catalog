@@ -1,6 +1,6 @@
-package ru.itpark.model.concretetarrifs;
+package ru.itpark.model.concretetariff;
 
-import ru.itpark.model.basetarrifs.OtherTariffGroup;
+import ru.itpark.model.basetariff.OtherTariffGroup;
 
 public class SmartThingsTariff extends OtherTariffGroup {
     public SmartThingsTariff(int id, String name, int price, boolean perMinuteBilling, boolean perSecondBilling, boolean unlimitedInternetAccess, boolean unlimitedSMSAccess, boolean unlimitedCallsInsideNetwork, int freeGigabytesCount, boolean monthlyPayment, boolean twoWeeksPayment, boolean weeklyPayment) {

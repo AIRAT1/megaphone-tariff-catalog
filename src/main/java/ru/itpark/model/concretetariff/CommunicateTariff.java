@@ -1,6 +1,6 @@
-package ru.itpark.model.concretetarrifs;
+package ru.itpark.model.concretetariff;
 
-import ru.itpark.model.basetarrifs.TurnOnTariffGroup;
+import ru.itpark.model.basetariff.TurnOnTariffGroup;
 
 public class CommunicateTariff extends TurnOnTariffGroup {
     public CommunicateTariff(int id, String name, int price, int freeMinutesCount, boolean unlimitedInternetAccess, boolean unlimitedSMSAccess, int freeGigabytesCount, int freeSMSCount, boolean thirtyDaysFee) {
