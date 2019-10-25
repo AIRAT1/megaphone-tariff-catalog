@@ -1,4 +1,4 @@
-package ru.itpark.model.basetariff;
+package ru.itpark.model.tariff;
 
 public class ModemUserTariff extends BaseTariffGroup {
     private boolean unlimitedInternetAccessForSixMonths;

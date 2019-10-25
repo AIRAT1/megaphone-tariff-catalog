@@ -1,8 +1,8 @@
 package ru.itpark;
 
-import ru.itpark.model.basetariff.ModemUserTariff;
-import ru.itpark.model.basetariff.OtherTariff;
-import ru.itpark.model.basetariff.TurnOnTariff;
+import ru.itpark.model.tariff.ModemUserTariff;
+import ru.itpark.model.tariff.OtherTariff;
+import ru.itpark.model.tariff.TurnOnTariff;
 
 import java.util.Arrays;
 
