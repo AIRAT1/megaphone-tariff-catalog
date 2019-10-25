@@ -1,4 +1,4 @@
-package ru.itpark.model.basetarrifs;
+package ru.itpark.model.tariff;
 
 public abstract class BaseTariffGroup {
     private int id;

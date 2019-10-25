@@ -1,12 +1,14 @@
 package ru.itpark;
 
-import ru.itpark.model.concretetarrifs.*;
+import ru.itpark.model.tariff.ModemUserTariff;
+import ru.itpark.model.tariff.OtherTariff;
+import ru.itpark.model.tariff.TurnOnTariff;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        WriteTariff writeTariff = new WriteTariff(
+        TurnOnTariff writeTariff = new TurnOnTariff(
                 0,
                 "Write",
                 250,
@@ -17,7 +19,7 @@ public class Main {
                 300,
                 true);
         Arrays.asList(writeTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        LookTariff lookTariff = new LookTariff(
+        TurnOnTariff lookTariff = new TurnOnTariff(
                 1,
                 "Look",
                 650,
@@ -28,7 +30,7 @@ public class Main {
                 300,
                 true);
         Arrays.asList(lookTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        CommunicateTariff communicateTariff = new CommunicateTariff(
+        TurnOnTariff communicateTariff = new TurnOnTariff(
                 2,
                 "Communicate",
                 350,
@@ -39,72 +41,28 @@ public class Main {
                 0,
                 true);
         Arrays.asList(communicateTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        HaveFunTariff haveFunTariff = new HaveFunTariff(
-                3,
-                "Have fun",
-                300,
-                100,
-                false,
-                false,
-                10,
-                0,
-                true);
-        Arrays.asList(haveFunTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        ChooseTariff chooseTariff = new ChooseTariff(
-                4,
-                "Choose",
-                260,
-                300,
-                false,
-                false,
-                10,
-                0,
-                true);
-        Arrays.asList(chooseTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        PremiumTariff premiumTariff = new PremiumTariff(
-                5,
-                "Premium",
-                2000,
-                4000,
-                true,
-                true,
-                0,
-                0,
-                true);
-        Arrays.asList(premiumTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        SpeakTariff speakTariff = new SpeakTariff(
-                6,
-                "Speak",
-                300,
-                500,
-                false,
-                false,
-                5,
-                0,
-                true);
-        Arrays.asList(speakTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        SixMonthsUnlimitedTariff sixMonthsUnlimitedTariff = new SixMonthsUnlimitedTariff(
+        ModemUserTariff sixMonthsUnlimitedTariff = new ModemUserTariff(
                 7,
                 "Six months unlimited",
                 3100,
                 true,
                 false);
         Arrays.asList(sixMonthsUnlimitedTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        TwelveMonthsUnlimitedTariff twelveMonthsUnlimitedTariff = new TwelveMonthsUnlimitedTariff(
+        ModemUserTariff twelveMonthsUnlimitedTariff = new ModemUserTariff(
                 8,
                 "Twelve months unlimited",
                 5100,
                 false,
                 true);
         Arrays.asList(twelveMonthsUnlimitedTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        MegafonOnlineTariff megafonOnlineTariff = new MegafonOnlineTariff(
+        ModemUserTariff megafonOnlineTariff = new ModemUserTariff(
                 9,
                 "Megafon online",
                 0,
                 false,
                 false);
         Arrays.asList(megafonOnlineTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        GoToZeroTariff goToZeroTariff = new GoToZeroTariff(
+        OtherTariff goToZeroTariff = new OtherTariff(
                 10,
                 "Go to zero",
                 0,
@@ -118,7 +76,7 @@ public class Main {
                 false,
                 false);
         Arrays.asList(goToZeroTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        WarmWelcomeTariff warmWelcomeTariff = new WarmWelcomeTariff(
+        OtherTariff warmWelcomeTariff = new OtherTariff(
                 11,
                 "Warm welcome",
                 350,
@@ -132,7 +90,7 @@ public class Main {
                 false,
                 false);
         Arrays.asList(warmWelcomeTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        HelloTariff helloTariff = new HelloTariff(
+        OtherTariff helloTariff = new OtherTariff(
                 12,
                 "Hello",
                 750,
@@ -146,33 +104,5 @@ public class Main {
                 true,
                 false);
         Arrays.asList(helloTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        PerSecondTariff perSecondTariff = new PerSecondTariff(
-                13,
-                "Per second",
-                0,
-                false,
-                true,
-                false,
-                false,
-                false,
-                0,
-                false,
-                false,
-                false);
-        Arrays.asList(perSecondTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
-        SmartThingsTariff smartThingsTariff = new SmartThingsTariff(
-                14,
-                "Smart things",
-                20,
-                false,
-                false,
-                true,
-                true,
-                true,
-                0,
-                false,
-                false,
-                true);
-        Arrays.asList(smartThingsTariff.getClass().getSuperclass().getDeclaredFields()).forEach(System.out::println);
     }
 }

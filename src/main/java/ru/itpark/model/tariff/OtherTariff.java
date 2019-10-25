@@ -1,6 +1,6 @@
-package ru.itpark.model.basetarrifs;
+package ru.itpark.model.tariff;
 
-public abstract class OtherTariffGroup extends BaseTariffGroup {
+public class OtherTariff extends BaseTariffGroup {
     private boolean perMinuteBilling;
     private boolean perSecondBilling;
     private boolean unlimitedInternetAccess;
@@ -11,7 +11,7 @@ public abstract class OtherTariffGroup extends BaseTariffGroup {
     private boolean twoWeeksPayment;
     private boolean weeklyPayment;
 
-    public OtherTariffGroup(int id, String name, int price, boolean perMinuteBilling, boolean perSecondBilling, boolean unlimitedInternetAccess, boolean unlimitedSMSAccess, boolean unlimitedCallsInsideNetwork, int freeGigabytesCount, boolean monthlyPayment, boolean twoWeeksPayment, boolean weeklyPayment) {
+    public OtherTariff(int id, String name, int price, boolean perMinuteBilling, boolean perSecondBilling, boolean unlimitedInternetAccess, boolean unlimitedSMSAccess, boolean unlimitedCallsInsideNetwork, int freeGigabytesCount, boolean monthlyPayment, boolean twoWeeksPayment, boolean weeklyPayment) {
         super(id, name, price);
         this.perMinuteBilling = perMinuteBilling;
         this.perSecondBilling = perSecondBilling;
